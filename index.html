@@ -101,7 +101,7 @@
           /*  ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
           /* PUT ANY CHANGES TO THE JAVASCRIPT HERE  */
-    var picInfo = context.getpicInfo(0,0,500, 400); 
+    var picInfo = context.getpicInfo(0,0,600, 500); 
     var data = picInfo.data; 
          //creating variables for the info we are strying to separate from the pic uploaded. 
         for(var i=0, n=data.length; i <n; i += 4) {
@@ -157,6 +157,7 @@
         ctx2.fillStyle = "black";
         ctx2.fillText("Original image will go here", 10, 20);
       //copied and pasted rest of canvas code, adding 2 to the variables so they are different and changing context to ctx2
+      //second canvas was small-- going to adjust some numbers to trouble shoot
      </script>
     </div><!-- /content -->
     <div data-role="footer" data-position="fixed">
