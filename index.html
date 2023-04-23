@@ -146,7 +146,8 @@
         var context = canvas.getContext("2d");
         context.font = '20pt Calibri';
         context.fillStyle = "black";
-        context.fillText("Assessed image will go here", 10, 20);
+        context.fillText("Original image will go here", 10, 20);
+       //accidentally changed this to assessed image instead of other way around 
       </script>
      
      <canvas id="myCanvas2" width=600 height=500 style="border:1px solid #d3d3d3;"></canvas> 
@@ -156,7 +157,7 @@
       //still not working changing ctx2 back to context
         ctx2.font = '20pt Calibri';
         ctx2.fillStyle = "black";
-        ctx2.fillText("Original image will go here", 10, 20);
+        ctx2.fillText("Assessed image will go here", 10, 20);
       //copied and pasted rest of canvas code, adding 2 to the variables so they are different and changing context to ctx2
       //second canvas was small-- going to adjust some numbers to trouble shoot
       // still small, realized i adjusted the wrong values will adjust the ones above
