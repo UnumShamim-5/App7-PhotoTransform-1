@@ -151,6 +151,13 @@
      
      <canvas id="myCanvas2" width=600 height style="border:1px solid #d3d3d3;"></canvas> 
      <script> // copied and pasted the attributes of 'myCanvas', changing the name to 'myCanvas2' so they were the same attributes but two separate canvases
+        var canvas2 = document.getElementById('myCanvas');
+        var context2 = canvas.getContext("2d");
+        ctx2.font = '20pt Calibri';
+        ctx2.fillStyle = "black";
+        ctx2.fillText("Original image will go here", 10, 20);
+      //copied and pasted rest of canvas code, adding 2 to the variables so they are different and changing context to ctx2
+     </script>
     </div><!-- /content -->
     <div data-role="footer" data-position="fixed">
       <p>DIY Diagnostics</p>
