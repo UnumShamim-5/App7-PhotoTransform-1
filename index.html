@@ -149,7 +149,7 @@
         context.fillText("Original image will go here", 10, 20);
       </script>
      
-     <canvas id="myCanvas2" width=600 height style="border:1px solid #d3d3d3;"></canvas> 
+     <canvas id="myCanvas2" width=600 height=500 style="border:1px solid #d3d3d3;"></canvas> 
      <script> // copied and pasted the attributes of 'myCanvas', changing the name to 'myCanvas2' so they were the same attributes but two separate canvases
         var canvas2 = document.getElementById('myCanvas');
         var context2 = canvas.getContext("2d");
@@ -158,6 +158,8 @@
         ctx2.fillText("Original image will go here", 10, 20);
       //copied and pasted rest of canvas code, adding 2 to the variables so they are different and changing context to ctx2
       //second canvas was small-- going to adjust some numbers to trouble shoot
+      // still small, realized i adjusted the wrong values will adjust the ones above
+      //mistake found: did not add a height value- adding now 
      </script>
     </div><!-- /content -->
     <div data-role="footer" data-position="fixed">
