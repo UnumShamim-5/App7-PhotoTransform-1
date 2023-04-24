@@ -101,14 +101,14 @@
           /*  ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
           /* PUT ANY CHANGES TO THE JAVASCRIPT HERE  */
-    var imageData = context.getimageData(0, 0, 600, 500); //code wouldnt work so added spaces
+    var imageData = context.getImageData(0, 0, 600, 500); //code wouldnt work so added spaces
     var data = imageData.data; 
          //creating variables for the info we are strying to separate from the pic uploaded. 
         for(var i=0, n=data.length; i <n; i += 4) {
          data[i] = 0; 
          data[i+1] = 0;  }
          // getting rid of the g and r making the intensity to 0 so it doesn't show, not doing anything to blue intensity
-        ctx2.putimageData(imageData, 0, 0)
+        ctx2.putImageData(imageData, 0, 0)
     //changed picInfo to imageData 
       
         } // end of img.onload-- couldn't use context bcz it was used for the first canvas-- this onloads it onto the second canvas so needs a different name
@@ -162,6 +162,7 @@
       //second canvas was small-- going to adjust some numbers to trouble shoot
       // still small, realized i adjusted the wrong values will adjust the ones above
       //mistake found: did not add a height value- adding now 
+      //capitalized image data 
      </script>
     </div><!-- /content -->
     <div data-role="footer" data-position="fixed">
